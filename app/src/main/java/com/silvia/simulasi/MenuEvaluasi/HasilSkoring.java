@@ -98,6 +98,8 @@ public class HasilSkoring extends AppCompatActivity {
         }
     }
 
+
+
     private void inputNilai() {
         Log.d("id_siswa", "id :"+prefManager.getIdUser());
         AndroidNetworking.post(api.URL_NILAI)
