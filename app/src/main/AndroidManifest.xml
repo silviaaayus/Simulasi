@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.silvia.simulasi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Simulasi"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+           >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".MenuEvaluasi.ListEvaluasi"
+            android:label="Evaluasi"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MenuEvaluasi.HasilSkoring"
+            android:label="Hasil Skor" />
+        <activity
+            android:name=".MenuVideo.IsiListVideo"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MenuRpp.IsiListRpp"
+            android:label="RPP"
+            android:parentActivityName=".MenuRpp.Rpp" />
+        <activity
+            android:name=".MenuMateri.IsiListMateri"
+            android:label="Materi"
+            android:parentActivityName=".MenuMateri.ListMateri" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".MenuAbout.About"
+            android:label="About"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MenuVideo.Video"
+            android:label="Video"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MenuEvaluasi.Evaluasi"
+            android:label="Evaluasi"
+            android:parentActivityName=".MenuEvaluasi.ListEvaluasi" />
+        <activity
+            android:name=".MenuRpp.Rpp"
+            android:label="RPP"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MenuSilabus.Silabus"
+            android:label="Silabus"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MenuMateri.ListMateri"
+            android:label="Materi"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
