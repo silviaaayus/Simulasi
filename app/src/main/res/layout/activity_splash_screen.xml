@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:gravity="center"
+    android:paddingLeft="@dimen/_8sdp"
+    android:paddingTop="@dimen/_8sdp"
+    android:paddingRight="@dimen/_8sdp"
+    android:paddingBottom="@dimen/_8sdp"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+       android:src="@drawable/knowledge" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
+        android:text="Aplikasi Belajar Simulasi \ndan Komunikasi Digital \nKelas X"/>
+</RelativeLayout>

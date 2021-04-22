@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_8sdp"
+    android:paddingRight="@dimen/_8sdp"
+    android:paddingBottom="@dimen/_8sdp"
+    android:paddingTop="@dimen/_8sdp"
+    android:background="@color/cardview_shadow_start_color"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/_145sdp"
+        android:layout_height="@dimen/_145sdp"
+        android:src="@drawable/login"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/white"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:id="@+id/edtusername"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:outlineSpotShadowColor="@color/white"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/white"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtpass"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:outlineSpotShadowColor="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textPassword" />
+    <Button
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:id="@+id/btnlogin"
+        android:background="@drawable/bg_btn_login"
+        android:text="Login"
+        android:layout_marginTop="@dimen/_8sdp" />
+    </LinearLayout>
+
+</RelativeLayout>
